@@ -76,14 +76,37 @@ body{
     margin-right: 40px;
 }
 
-.humidity, .wind{
+.precipitation, .wind{
     font-size: 28px;
     margin-top: -6px;
 }
 
 
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+    height: auto;
+    /* other styles */
+  }
+}
+
+@media only screen and (max-width: 300px) {
+    .card {
+      width: 100%;
+      height: auto;
+    }
+    .fa{
+       font-size: 10px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .search input{
+        width: 20px;
+    }
 
 
-
+  }
+  
 
 

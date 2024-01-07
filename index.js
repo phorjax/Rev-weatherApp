@@ -1,17 +1,17 @@
-const apiKey = "b618bc00683b307c06d1c5fde63d8828";
+const apiKey = "f38723a34f4747c9a92154330240701";
 const City = document.querySelector(".search input");
 
 
 async function getWeather(city){
-    const apiUrl = `https://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
+    const apiUrl = ` http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}}`;
     const resp = await fetch(apiUrl);
     var data = await resp.json();
     console.log(data);
 
-    document.querySelector(".city").innerHTML = data.name;
-    document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°F";
-    document.querySelector(".humidity").innerHTML = data.main.humidity + "%"
-    document.querySelector(".wind").innerHTML = data.wind.speed + "MPH";
+    document.querySelector(".city").innerHTML = data.location.name;
+    document.querySelector(".temp").innerHTML = Math.round(data.current.temp_f) + "°F";
+    document.querySelector(".precipitation").innerHTML = data.current.precip_in + "%"
+    document.querySelector(".wind").innerHTML = data.current.wind_mph + "MPH";
 
 }
 
