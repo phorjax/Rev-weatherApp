@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="City name" spellcheck="false" />
+        <button><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+      </div>
+      <div class="weather">
+        <i class="fa-solid fa-temperature-half fa-4x"></i> 
+        <h1 class="temp">70°F</h1>
+        <h2 class="city">Miami</h2>
+        <div class="details">
+            <div class="col">
+                <i class="fa-solid fa-droplet fa-4x"></i>
+                <div>
+                    <p class="humidity">78%</p>
+                    <p>Precipitation</p>
+                </div>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-wind fa-4x"></i>
+                <div>
+                    <p class="wind">15 MPH</p>
+                    <p>wind speed</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6e0d9f29ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
